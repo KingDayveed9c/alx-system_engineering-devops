@@ -35,8 +35,8 @@ defaults
 
 frontend myfrontend
 	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/www.uniqueel.tech.pem
-	http-request redirect scheme https code 301 if { hdr(Host) -i www.uniqueel.tech } !{ ssl_fc }
+	bind *:443 ssl crt /etc/haproxy/certs/www.KingDayveed9c.tech.pem
+	http-request redirect scheme https code 301 if { hdr(Host) -i www.KingDayveed9c.tech } !{ ssl_fc }
 	default_backend myservers
 
 backend myservers
