@@ -11,4 +11,4 @@ configuring a firewall through UFW
   * [100-port_forwarding](./100-port_forwarding): `ufw` configuration file that
   configures a firewall to redirect port `8080/TCP` to port `80/TCP`.
 #AUTHOR
-Adam Umar Faruq<umarfaruqadam03@gmail.com>
+David Adejumo <davidadejumo@gmail.com>
