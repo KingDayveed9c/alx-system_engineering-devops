@@ -1,17 +1,14 @@
-## Task 1 add 'sudo' where necessary
-- apt-get install ufw
-- sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
-- ufw disable
-- ufw enable
-- ufw default deny incoming
-- ufw default allow outgoing
-- ufw allow 22/tcp
-- ufw allow 443/tcp
-- ufw allow 80/tcp
+# Firewall
+configuring a firewall through UFW
+## Tasks :page_with_curl:
 
-### How to manage and forward ports with UFW
-https://www.arubacloud.com/tutorial/how-to-manage-and-forward-ports-with-ufw-on-ubuntu-18-04.aspx
+* **0. Block all incoming traffic but**
+  * [0-block_all_incoming_traffic_but](./0-block_all_incoming_traffic_but): Bash
+  script that installs a `ufw` firewall to block all incoming traffic except for
+  ports `22`, `443` and `80` on a web server.
 
-## Task 2
-
-### modify your /etc/ufw/before.rules and paste the file as your answer
+* **2. Port forwarding**
+  * [100-port_forwarding](./100-port_forwarding): `ufw` configuration file that
+  configures a firewall to redirect port `8080/TCP` to port `80/TCP`.
+#AUTHOR
+Adam Umar Faruq<umarfaruqadam03@gmail.com>
