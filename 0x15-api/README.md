@@ -2,8 +2,7 @@
 
 ```diff
 
-+ Fully Done
-- By Author:
-+ Afolabi John Oluwaseun
++ Done
+- By David Adejumo<davidadejumo@gmail.com> 
 
 ```
